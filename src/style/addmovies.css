@@ -1,0 +1,75 @@
+/* Form container */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Form title */
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Label and input container */
+  .form-group {
+    display:flex;
+    flex-direction:row;
+    align-items: center; /* Align label and input vertically */
+    margin-bottom: 50px;
+  }
+  
+  /* Label styling */
+  label {
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust space between label and input */
+    margin-right: 10px; /* Adjust space between label and input */
+    align-items: center;
+  }
+  
+  /* Input field styling */
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Make input fields take up full width */
+    align-items: center;
+  }
+  
+  /* Input field hover effect */
+  input[type="text"]:hover,
+  input[type="number"]:hover,
+  textarea:hover {
+    border-color: #999;
+  }
+  
+  /* Input field focus effect */
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+  }
+  
+  /* Button styling */
+  button[type="submit"] {
+    background: linear-gradient(90deg, #3f5efb, #fc466b);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+  
+  /* Button hover effect */
+  button[type="submit"]:hover {
+    background: linear-gradient(90deg, #fc466b, #3f5efb);
+  }
+  
+  

@@ -1,0 +1,1 @@
+export const API = "https://movie-booking-backend-6suf.onrender.com";
