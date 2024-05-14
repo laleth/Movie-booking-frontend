@@ -43,6 +43,15 @@ function Login({ setAuthenticated }) {
   };
 
   const validateregister = async () => {
+
+    const passwordPattern = /^(?=.*?[0-9])(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[#!@%$_]).{8,}$/;
+
+    if (!passwordPattern.test(registerPassword)) {
+      openNotification('error', 'Registration Error', 'Password Pattern does not match');
+      alert("Pattern must be Min 8 Chars, #!@%$_,0-9,A-Z,a-z")
+      return; 
+    }
+    
     try {
       const response = await axios.post(`${API}/users/register`, { username, password: registerPassword, email: registerEmail });
       if (response.status === 200) {
